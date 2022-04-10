@@ -1,0 +1,31 @@
+<div class="row my-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm rounded-0">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nom & Prenom</th>
+                        <th>Tel</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each contacts}}
+                    <tr>
+                        <td scope="row">{{name}}</td>
+                        <td>{{phone}}</td>
+                        <td>
+                            <a href="/update/{{_id}}" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                             <a href="/delete/{{_id}}" class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
