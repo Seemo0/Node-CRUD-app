@@ -11,7 +11,7 @@ app.engine("handlebars", engine({ defaultLayout: "main" }))
 app.set("view engine", "handlebars")
 
 const port = 1000;
-const url = "mongodb+srv://semo:semo@notesapp.fpq28.mongodb.net/contact?retryWrites=true&w=majority"
+const url = "mongodb+srv://urname:<password>@urdatabase.fpq28.mongodb.net/contact?retryWrites=true&w=majority"
 
 //add bp midlware
 app.use(bodyParser.urlencoded({extended : false }))
